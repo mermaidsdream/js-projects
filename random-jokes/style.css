@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === section header === */
+
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: #bac6db;
+}
+
+.container {
+  max-width: 100%;
+  height: 700px;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+button {
+  width: 300px;
+  height: 40px;
+  margin-top: 15px;
+  cursor: pointer;
+  outline: none;
+  font-size: 17px;
+  color: #fff;
+  background-color: #49a6e9;
+  border-radius: 5px;
+  border: 2px solid #49a6e9;
+  letter-spacing: 2px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  color: #49a6e9;
+  background-color: #0c2d6b;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
+
+p {
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #010b1d;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #eeeeff;
+}
+
+/* media query */
+
+@media screen and (max-width: 1000px) {
+  .container {
+    background-position: center;
+    background-size: cover;
+  }
+
+  button {
+    box-shadow: 5px 5px 25px 20px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* === footer content === */
+
+.footer {
+  margin-top: 0px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  padding: 0 20px;
+}
+
+.footer li,
+a {
+  color: #fff;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 50px;
+  text-decoration: none;
+  list-style-type: none;
+  display: inline-flex;
+  transition: all 0.3s ease 0s;
+  padding: 25px 5px;
+}
+
+.footer-data a {
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+
+.footer-data a:hover {
+  color: #49a6e9;
+}
+
+.footer-links {
+  color: #fff;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 50px;
+  transition: all 0.5s ease 0s;
+}
+
+.footer-links:hover {
+  color: #49a6e9;
+}
